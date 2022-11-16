@@ -39,6 +39,13 @@ class LoadBalancer
                         }
                 }
             }
+            //In case an invalid variant was set in the constructor
+            else
+            {
+                throw new Exception('Invalid Variant');
+            }
+
+
 
 
         }
