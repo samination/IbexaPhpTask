@@ -16,7 +16,7 @@ class LoadBalancer
         $this->hosts = $hosts;
         $this->variant=$variant;
     }
-    public function HandleRequest(Request $request)
+    public function HandleRequest(Request $request): Host
     {
         $minLoadHost =new Host(-1);
 
